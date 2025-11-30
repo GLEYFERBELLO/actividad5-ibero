@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto | santiagodeveloper</title>
+    <meta name="description" content="Contacto y agenda. Cotiza portafolio, web empresarial o e-commerce." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top sd-navbar">
+        <div class="container">
+            <a class="navbar-brand sd-brand" href="index.html">
+                <span class="sd-icon"><i class="bi bi-code-slash"></i></span><span>santiagodeveloper</span>
+                <span class="sd-badge text-muted-sd d-none d-sm-inline"><i class="bi bi-envelope"></i> contacto</span>
+            </a>
+
+            <button class="btn sd-btn-outline d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#sdNav"
+                aria-controls="sdNav" aria-expanded="false" aria-label="Abrir menú">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="sdNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="planes.html">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="portafolio.html">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="recursos.html">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="contacto.html">Contacto</a></li>
+
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn sd-btn-outline btn-sm" data-sd-theme-btn type="button" aria-pressed="false">
+                            <i class="bi bi-circle-half"></i> Tema: <span data-sd-theme-label>Oscuro</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="sd-hero">
+        <div class="container">
+            <h1 class="sd-section-title">Contacto</h1>
+            <p class="text-muted-sd">
+                Solicita tu diagnóstico y define el tipo de web que necesitas.
+            </p>
+
+            <div class="row g-4 mt-2">
+                <div class="col-lg-7">
+                    <div class="sd-card p-4 sd-form">
+                        <h2 class="h5"><i class="bi bi-ui-checks"></i> Formulario</h2>
+
+                        <div class="alert alert-success d-none mt-3" role="alert" data-sd-form-msg></div>
+
+                        <form class="needs-validation mt-3" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Nombre</label>
+                                    <input class="form-control" type="text" placeholder="Tu nombre" required />
+                                    <div class="invalid-feedback">Ingresa tu nombre.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Correo</label>
+                                    <input class="form-control" type="email" placeholder="correo@ejemplo.com"
+                                        required />
+                                    <div class="invalid-feedback">Ingresa un correo válido.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Tipo de web</label>
+                                    <select class="form-select" required>
+                                        <option value="" selected>Selecciona…</option>
+                                        <option>Portafolio</option>
+                                        <option>Empresarial</option>
+                                        <option>E-commerce</option>
+                                        <option>Otro</option>
+                                    </select>
+                                    <div class="invalid-feedback">Selecciona un tipo de web.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Objetivo</label>
+                                    <select class="form-select" required>
+                                        <option value="" selected>Selecciona…</option>
+                                        <option>Presencia / credibilidad</option>
+                                        <option>Conseguir clientes (leads)</option>
+                                        <option>Vender online</option>
+                                        <option>Mostrar proyectos</option>
+                                    </select>
+                                    <div class="invalid-feedback">Selecciona un objetivo.</div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Mensaje</label>
+                                    <textarea class="form-control" rows="4"
+                                        placeholder="Cuéntame qué necesitas y tu idea principal." required></textarea>
+                                    <div class="invalid-feedback">Escribe un mensaje.</div>
+                                </div>
+
+                                <div class="col-12 d-flex gap-2 flex-wrap">
+                                    <button class="btn sd-btn-primary" type="submit">
+                                        <i class="bi bi-send"></i> Enviar
+                                    </button>
+                                    <button class="btn sd-btn-outline" type="reset">
+                                        <i class="bi bi-arrow-counterclockwise"></i> Limpiar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="sd-card p-4">
+                        <h2 class="h5" id="agenda"><i class="bi bi-calendar2-check"></i> Agenda</h2>
+                        <p class="text-muted-sd mb-3">
+                            Horarios sugeridos para diagnóstico.
+                        </p>
+
+                        <div class="sd-table">
+                            <table class="table table-sm table-borderless align-middle">
+                                <thead>
+                                    <tr>
+                                        <th>Día</th>
+                                        <th>Hora</th>
+                                        <th>Modalidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-muted-sd">
+                                    <tr>
+                                        <td>Lunes</td>
+                                        <td>6:00 PM</td>
+                                        <td>Meet</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Miércoles</td>
+                                        <td>7:00 PM</td>
+                                        <td>Meet</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Viernes</td>
+                                        <td>6:30 PM</td>
+                                        <td>Llamada</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sd-divider"></div>
+
+                        <h3 class="h6 mb-2"><i class="bi bi-person-lines-fill"></i> Datos</h3>
+
+                        <div class="d-grid gap-2">
+                            <div class="sd-card p-3" style="box-shadow:none;">
+                                <div class="d-flex justify-content-between gap-2 align-items-center flex-wrap">
+                                    <div>
+                                        <div class="fw-semibold">Correo</div>
+                                        <div class="text-muted-sd">santiagodeveloper@correo.com</div>
+                                    </div>
+                                    <button class="btn sd-btn-outline btn-sm"
+                                        data-sd-copy="santiagodeveloper@correo.com">Copiar</button>
+                                </div>
+                            </div>
+
+                            <div class="sd-card p-3" style="box-shadow:none;">
+                                <div class="d-flex justify-content-between gap-2 align-items-center flex-wrap">
+                                    <div>
+                                        <div class="fw-semibold">WhatsApp</div>
+                                        <div class="text-muted-sd">+57 300 000 0000</div>
+                                    </div>
+                                    <button class="btn sd-btn-outline btn-sm"
+                                        data-sd-copy="+57 300 000 0000">Copiar</button>
+                                </div>
+                            </div>
+
+                            <a class="btn sd-btn-primary" href="mailto:santiagodeveloper@correo.com">
+                                <i class="bi bi-envelope"></i> Escribir por correo
+                            </a>
+
+                            <a class="btn sd-btn-outline" href="https://wa.me/573000000000" target="_blank"
+                                rel="noopener">
+                                <i class="bi bi-whatsapp"></i> Ir a WhatsApp
+                            </a>
+                        </div>
+
+                        <div class="sd-divider"></div>
+
+                        <h3 class="h6 mb-2"><i class="bi bi-patch-question"></i> Preguntas frecuentes</h3>
+                        <ul class="text-muted-sd mb-0">
+                            <li>Pagos por cuotas disponibles según el plan.</li>
+                            <li>SEO base incluido; avanzado por plan.</li>
+                            <li>Tiempo de entrega depende del alcance y contenido.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="sd-footer py-4 mt-5">
+        <div class="container">
+            <div class="text-muted-sd sd-small d-flex justify-content-between flex-wrap gap-2">
+                <span>© <span id="year"></span> santiagodeveloper</span>
+                <span>Contacto · Agenda · Cotización</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>santiagodeveloper | Consultorio y Asesoría Web</title>
+    <meta
+      name="description"
+      content="Consultorio y asesoría web para crear portafolios, páginas empresariales y e-commerce con acompañamiento en SEO, velocidad, leads y ventas."
+    />
+    <meta name="theme-color" content="#0b1220" />
+    <meta
+      property="og:title"
+      content="Santiagodeveloper | Consultorio y Asesoría Web"
+    />
+    <meta
+      property="og:description"
+      content="Creamos tu web y te acompañamos para que cargue rápido, posicione y convierta visitas en clientes."
+    />
+    <meta property="og:type" content="website" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/img/icon/logo.png" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top sd-navbar">
+      <div class="container">
+        <a class="navbar-brand sd-brand" href="index.html">
+          <span class="sd-icon"><i class="bi bi-code-slash"></i></span>
+          <span>Santiagodeveloper</span>
+          <span class="sd-badge text-muted-sd d-none d-sm-inline"
+            ><i class="bi bi-lightning-charge"></i> consultorio web</span
+          >
+        </a>
+
+        <button
+          class="btn sd-btn-outline d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sdNav"
+          aria-controls="sdNav"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="sdNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" data-sd-nav href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-sd-nav href="planes.html">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-sd-nav href="servicios.html"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-sd-nav href="portafolio.html"
+                >Portafolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-sd-nav href="recursos.html">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-sd-nav href="contacto.html">Contacto</a>
+            </li>
+
+            <li class="nav-item ms-lg-2">
+              <button
+                class="btn sd-btn-outline btn-sm"
+                data-sd-theme-btn
+                type="button"
+                aria-pressed="false"
+              >
+                <i class="bi bi-circle-half"></i> Tema:
+                <span data-sd-theme-label>Oscuro</span>
+              </button>
+            </li>
+
+            <li class="nav-item ms-lg-2">
+              <a class="btn sd-btn-primary btn-sm" href="contacto.html#agenda">
+                <i class="bi bi-calendar2-check"></i> Agendar diagnóstico
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="sd-hero">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="sd-chip mb-3">
+              <i class="bi bi-shield-check"></i> Web profesional · SEO ·
+              Velocidad · Leads
+            </div>
+
+            <h1 class="display-5 sd-section-title">
+              Tu
+              <span class="sd-gradient-text">consultorio y asesoría web</span>
+              para lanzar una página que convierta.
+            </h1>
+
+            <p class="mt-3 text-muted-sd sd-small">
+              santiagodeveloper crea portafolios, páginas empresariales y
+              e-commerce. El acompañamiento varía según el plan: SEO,
+              rendimiento, analítica y mejoras orientadas a conversión (leads y
+              ventas).
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <a class="btn sd-btn-primary btn-lg" href="planes.html">
+                <i class="bi bi-bag-check"></i> Ver planes
+              </a>
+              <a class="btn sd-btn-outline btn-lg" href="#como-funciona">
+                <i class="bi bi-play-circle"></i> Cómo funciona
+              </a>
+            </div>
+
+            <div class="row g-3 mt-4">
+              <div class="col-sm-4">
+                <div class="sd-kpi">
+                  <div class="fw-bold">
+                    <i class="bi bi-speedometer2"></i> Velocidad
+                  </div>
+                  <div class="text-muted-sd">Optimización de carga</div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="sd-kpi">
+                  <div class="fw-bold"><i class="bi bi-google"></i> SEO</div>
+                  <div class="text-muted-sd">Base para posicionar</div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="sd-kpi">
+                  <div class="fw-bold">
+                    <i class="bi bi-graph-up"></i> Conversión
+                  </div>
+                  <div class="text-muted-sd">Leads y ventas</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="sd-card p-3">
+              <img
+                class="sd-img"
+                src="assets/img/hero.png"
+                alt="Vista de un sitio web moderno"
+              />
+              <div class="p-2 pt-3">
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="sd-chip"
+                    ><i class="bi bi-phone"></i> Responsive</span
+                  >
+                  <span class="sd-chip"
+                    ><i class="bi bi-search"></i> SEO on-page</span
+                  >
+                  <span class="sd-chip"
+                    ><i class="bi bi-braces"></i> HTML + Bootstrap</span
+                  >
+                  <span class="sd-chip"
+                    ><i class="bi bi-check2-circle"></i> Enfoque claro</span
+                  >
+                </div>
+                <p class="mt-3 text-muted-sd mb-0">
+                  Diseño consistente, navegación sencilla y contenido orientado
+                  a resultados.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sd-divider"></div>
+
+        <section id="como-funciona" class="mt-2">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <h2 class="sd-section-title">Cómo funciona</h2>
+              <p class="text-muted-sd">
+                El objetivo es construir una web rápida, clara y preparada para
+                captar clientes.
+              </p>
+
+              <ol class="text-muted-sd">
+                <li>
+                  <strong>Diagnóstico:</strong> objetivo, público y contenido.
+                </li>
+                <li>
+                  <strong>Estructura:</strong> páginas, secciones y navegación.
+                </li>
+                <li>
+                  <strong>Desarrollo:</strong> HTML, Bootstrap y JS mínimo.
+                </li>
+                <li>
+                  <strong>Optimización:</strong> SEO base, velocidad y
+                  conversión.
+                </li>
+                <li><strong>Publicación:</strong> hosting y entrega final.</li>
+              </ol>
+
+              <div class="sd-note mt-3">
+                <strong>Enfoque:</strong> más claridad, menos fricción.
+                Formularios cortos, llamada a la acción visible y contacto
+                fácil.
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="sd-card p-4">
+                <h3 class="h5 mb-3">
+                  <i class="bi bi-ui-checks-grid"></i> Entregables del sitio
+                </h3>
+                <ul class="text-muted-sd mb-0">
+                  <li>6 páginas funcionales.</li>
+                  <li>Tabla de planes con estilos y bordes.</li>
+                  <li>Listas ordenadas y no ordenadas.</li>
+                  <li>Multimedia: video dentro del sitio.</li>
+                  <li>Glosario con enlaces técnicos.</li>
+                </ul>
+
+                <div class="sd-divider"></div>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="btn sd-btn-primary" href="planes.html"
+                    ><i class="bi bi-arrow-right"></i> Elegir plan</a
+                  >
+                  <a class="btn sd-btn-outline" href="recursos.html"
+                    ><i class="bi bi-book"></i> Ver glosario</a
+                  >
+                  <a class="btn sd-btn-outline" href="contacto.html"
+                    ><i class="bi bi-envelope"></i> Contactar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-5">
+          <div class="sd-card p-4">
+            <div
+              class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+            >
+              <h2 class="h4 mb-0 sd-section-title">
+                <i class="bi bi-camera-video"></i> Video de demostración
+              </h2>
+              <span class="sd-chip"
+                ><i class="bi bi-film"></i> Archivo local</span
+              >
+            </div>
+
+            <p class="text-muted-sd mt-2 mb-3">
+              Video mostrando el recorrido del sitio y la explicación de la
+              creación.
+            </p>
+
+            <div class="ratio ratio-16x9 sd-card">
+              <video
+                controls
+                preload="metadata"
+                poster="assets/video/poster.png"
+                class="sd-video"
+              >
+                <source src="assets/video/demo.mp4" type="video/mp4" />
+                Tu navegador no soporta video HTML5.
+              </video>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <footer class="sd-footer py-4 mt-5">
+      <div class="container">
+        <div class="row g-3 align-items-center">
+          <div class="col-md-6">
+            <div class="sd-brand">
+              <span class="sd-icon"><i class="bi bi-code-slash"></i></span>
+              <div>
+                <div class="fw-bold">santiagodeveloper</div>
+                <div class="text-muted-sd sd-small">
+                  Consultorio y asesoría web · HTML + Bootstrap
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-flex justify-content-md-end gap-2 flex-wrap">
+              <a class="sd-chip" href="recursos.html#seo"
+                ><i class="bi bi-search"></i> SEO</a
+              >
+              <a class="sd-chip" href="recursos.html#hosting"
+                ><i class="bi bi-hdd-network"></i> Hosting</a
+              >
+              <a class="sd-chip" href="contacto.html"
+                ><i class="bi bi-chat-dots"></i> Contacto</a
+              >
+            </div>
+            <div class="text-muted-sd mt-2 sd-small">
+              © <span id="year"></span> santiagodeveloper
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

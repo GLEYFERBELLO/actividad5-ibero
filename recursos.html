@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recursos | santiagodeveloper</title>
+    <meta name="description" content="Glosario técnico: SEO, hosting, dominio, leads, CDN y HTTPS/SSL." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top sd-navbar">
+        <div class="container">
+            <a class="navbar-brand sd-brand" href="index.html">
+                <span class="sd-icon"><i class="bi bi-code-slash"></i></span><span>santiagodeveloper</span>
+                <span class="sd-badge text-muted-sd d-none d-sm-inline"><i class="bi bi-book"></i> recursos</span>
+            </a>
+
+            <button class="btn sd-btn-outline d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#sdNav"
+                aria-controls="sdNav" aria-expanded="false" aria-label="Abrir menú">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="sdNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="planes.html">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="portafolio.html">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="recursos.html">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" data-sd-nav href="contacto.html">Contacto</a></li>
+
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn sd-btn-outline btn-sm" data-sd-theme-btn type="button" aria-pressed="false">
+                            <i class="bi bi-circle-half"></i> Tema: <span data-sd-theme-label>Oscuro</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="sd-hero">
+        <div class="container">
+            <h1 class="sd-section-title">Recursos y glosario</h1>
+            <p class="text-muted-sd">
+                Definiciones breves con enlaces externos para ampliar.
+            </p>
+
+            <div class="sd-card p-4 mt-3">
+                <h2 class="h5 mb-3"><i class="bi bi-list-check"></i> Índice</h2>
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="sd-chip" href="#seo"><i class="bi bi-search"></i> SEO</a>
+                    <a class="sd-chip" href="#hosting"><i class="bi bi-hdd-network"></i> Hosting</a>
+                    <a class="sd-chip" href="#dominio"><i class="bi bi-globe"></i> Dominio</a>
+                    <a class="sd-chip" href="#leads"><i class="bi bi-person-plus"></i> Lead</a>
+                    <a class="sd-chip" href="#cdn"><i class="bi bi-cloud"></i> CDN</a>
+                    <a class="sd-chip" href="#ssl"><i class="bi bi-lock"></i> HTTPS/SSL</a>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-1">
+                <div class="col-lg-6" id="seo">
+                    <div class="sd-card p-4 h-100">
+                        <h3 class="h5"><i class="bi bi-search"></i> SEO</h3>
+                        <p class="text-muted-sd mb-2">
+                            Prácticas para mejorar la visibilidad en buscadores usando estructura, contenido y claridad
+                            técnica.
+                        </p>
+                        <ul class="text-muted-sd mb-2">
+                            <li>Jerarquía de títulos (H1/H2).</li>
+                            <li>Meta description informativa.</li>
+                            <li>Contenido que responda preguntas reales.</li>
+                        </ul>
+                        <a class="text-decoration-underline" target="_blank" rel="noopener"
+                            href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">
+                            Guía de SEO (Google)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="hosting">
+                    <div class="sd-card p-4 h-100">
+                        <h3 class="h5"><i class="bi bi-hdd-network"></i> Hosting</h3>
+                        <p class="text-muted-sd mb-2">
+                            Servicio donde se alojan los archivos de tu web para que sea accesible desde internet.
+                        </p>
+                        <ol class="text-muted-sd mb-2">
+                            <li>Subes tu proyecto.</li>
+                            <li>Obtienes una URL.</li>
+                            <li>Tu web queda pública.</li>
+                        </ol>
+                        <a class="text-decoration-underline" target="_blank" rel="noopener"
+                            href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server">
+                            Qué es un servidor web (MDN)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="dominio">
+                    <div class="sd-card p-4 h-100">
+                        <h3 class="h5"><i class="bi bi-globe"></i> Dominio</h3>
+                        <p class="text-muted-sd mb-2">
+                            Es el nombre del sitio (por ejemplo, tusitio.com) que se conecta con el hosting.
+                        </p>
+                        <a class="text-decoration-underline" target="_blank" rel="noopener"
+                            href="https://www.cloudflare.com/learning/dns/what-is-a-domain-name/">
+                            Qué es un dominio (Cloudflare)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="leads">
+                    <div class="sd-card p-4 h-100">
+                        <h3 class="h5"><i class="bi bi-person-plus"></i> Lead</h3>
+                        <p class="text-muted-sd mb-2">
+                            Persona que muestra interés y deja un dato de contacto (formulario, WhatsApp, llamada o
+                            correo).
+                        </p>
+                        <div class="sd-note">
+                            <strong>Ejemplo:</strong> alguien que solicita una cotización desde la página.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="cdn">
+                    <div class="sd-card p-4 h-100">
+                        <h3 class="h5"><i class="bi bi-cloud"></i> CDN</h3>
+                        <p class="text-muted-sd mb-2">
+                            Red de servidores que acelera la entrega de contenido al usuario por cercanía geográfica.
+                        </p>
+                        <a class="text-decoration-underline" target="_blank" rel="noopener"
+                            href="https://www.cloudflare.com/learning/cdn/what-is-a-cdn/">
+                            Qué es un CDN (Cloudflare)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="ssl">
+                    <div class="sd-card p-4 h-100">
+                        <h3 class="h5"><i class="bi bi-lock"></i> HTTPS/SSL</h3>
+                        <p class="text-muted-sd mb-2">
+                            HTTPS protege la comunicación entre el usuario y el sitio, y reduce riesgos de
+                            interceptación.
+                        </p>
+                        <a class="text-decoration-underline" target="_blank" rel="noopener"
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">
+                            HTTP y HTTPS (MDN)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn sd-btn-primary" href="planes.html"><i class="bi bi-bag-check"></i> Ver planes</a>
+                <a class="btn sd-btn-outline" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="sd-footer py-4 mt-5">
+        <div class="container">
+            <div class="text-muted-sd sd-small d-flex justify-content-between flex-wrap gap-2">
+                <span>© <span id="year"></span> santiagodeveloper</span>
+                <span>Glosario · Recursos</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
