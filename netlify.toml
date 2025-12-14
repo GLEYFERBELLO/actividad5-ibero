@@ -1,34 +1,13 @@
 [build]
   publish = "."
 
-# Primero las redirecciones específicas
 [[redirects]]
   from = "/contacto"
   to = "/contacto.html"
   status = 200
 
+# URL bonita opcional: /gracias -> /gracias.html
 [[redirects]]
   from = "/gracias"
-  to = "/contacto.html"
+  to = "/gracias.html"
   status = 200
-  force = true  # Usa force para mantener los parámetros
-
-# Luego la redirección general para SPA
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-# Configuración de formularios
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-
-# Configuración específica para formularios
-[[headers]]
-  for = "/contacto.html"
-  [headers.values]
-    Content-Security-Policy = "default-src 'self' https://cdn.jsdelivr.net https://www.youtube.com; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'"
