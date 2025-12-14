@@ -56,50 +56,56 @@
                     <div class="sd-card p-4 sd-form">
                         <h2 class="h5"><i class="bi bi-ui-checks"></i> Formulario</h2>
 
-                        <div class="alert alert-success d-none mt-3" role="alert" data-sd-form-msg></div>
+                        <div id="form-message" class="alert alert-success d-none mt-3" role="alert">
+                            ¡Mensaje enviado exitosamente! Te contactaremos pronto.
+                        </div>
 
-                        <form class="needs-validation mt-3" novalidate>
+                        <!-- Formulario Netlify con atributos necesarios -->
+                        <form name="contacto" method="POST" data-netlify="true" class="needs-validation mt-3" novalidate>
+                            <!-- Campo hidden para redirección después del envío -->
+                            <input type="hidden" name="form-name" value="contacto" />
+                            
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Nombre</label>
-                                    <input class="form-control" type="text" placeholder="Tu nombre" required />
+                                    <input class="form-control" type="text" name="nombre" placeholder="Tu nombre" required />
                                     <div class="invalid-feedback">Ingresa tu nombre.</div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <label class="form-label">Correo</label>
-                                    <input class="form-control" type="email" placeholder="correo@ejemplo.com"
+                                    <input class="form-control" type="email" name="email" placeholder="correo@ejemplo.com"
                                         required />
                                     <div class="invalid-feedback">Ingresa un correo válido.</div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <label class="form-label">Tipo de web</label>
-                                    <select class="form-select" required>
+                                    <select class="form-select" name="tipo_web" required>
                                         <option value="" selected>Selecciona…</option>
-                                        <option>Portafolio</option>
-                                        <option>Empresarial</option>
-                                        <option>E-commerce</option>
-                                        <option>Otro</option>
+                                        <option value="Portafolio">Portafolio</option>
+                                        <option value="Empresarial">Empresarial</option>
+                                        <option value="E-commerce">E-commerce</option>
+                                        <option value="Otro">Otro</option>
                                     </select>
                                     <div class="invalid-feedback">Selecciona un tipo de web.</div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <label class="form-label">Objetivo</label>
-                                    <select class="form-select" required>
+                                    <select class="form-select" name="objetivo" required>
                                         <option value="" selected>Selecciona…</option>
-                                        <option>Presencia / credibilidad</option>
-                                        <option>Conseguir clientes (leads)</option>
-                                        <option>Vender online</option>
-                                        <option>Mostrar proyectos</option>
+                                        <option value="Presencia / credibilidad">Presencia / credibilidad</option>
+                                        <option value="Conseguir clientes (leads)">Conseguir clientes (leads)</option>
+                                        <option value="Vender online">Vender online</option>
+                                        <option value="Mostrar proyectos">Mostrar proyectos</option>
                                     </select>
                                     <div class="invalid-feedback">Selecciona un objetivo.</div>
                                 </div>
 
                                 <div class="col-12">
                                     <label class="form-label">Mensaje</label>
-                                    <textarea class="form-control" rows="4"
+                                    <textarea class="form-control" name="mensaje" rows="4"
                                         placeholder="Cuéntame qué necesitas y tu idea principal." required></textarea>
                                     <div class="invalid-feedback">Escribe un mensaje.</div>
                                 </div>

@@ -51,6 +51,26 @@
             if (!form.checkValidity()) {
                 event.preventDefault();
                 event.stopPropagation();
+            } else {
+                // Si el formulario es válido, mostrar mensaje de éxito
+                const formMessage = document.getElementById("form-message");
+                if (formMessage) {
+                    formMessage.classList.remove("d-none");
+                    formMessage.classList.add("show");
+                    
+                    // Desplazar al mensaje
+                    setTimeout(() => {
+                        formMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }, 100);
+                    
+                    // Reiniciar formulario después de 5 segundos
+                    setTimeout(() => {
+                        form.reset();
+                        form.classList.remove("was-validated");
+                        formMessage.classList.remove("show");
+                        formMessage.classList.add("d-none");
+                    }, 5000);
+                }
             }
             form.classList.add("was-validated");
         }, false);
@@ -60,10 +80,11 @@
     document.querySelectorAll("[data-sd-copy]").forEach((btn) => {
         btn.addEventListener("click", async () => {
             const text = btn.getAttribute("data-sd-copy") || "";
+            const originalText = btn.textContent;
             try {
                 await navigator.clipboard.writeText(text);
                 btn.textContent = "Copiado ✅";
-                setTimeout(() => (btn.textContent = "Copiar"), 1200);
+                setTimeout(() => (btn.textContent = originalText), 1200);
             } catch {
                 alert("No se pudo copiar. Copia manualmente: " + text);
             }
@@ -73,4 +94,26 @@
     // Set theme label on load
     const t = root.getAttribute("data-theme");
     if (themeLabel) themeLabel.textContent = t === "light" ? "Claro" : "Oscuro";
+
+    // Manejo del envío del formulario con Netlify
+    const form = document.querySelector('form[name="contacto"]');
+    if (form) {
+        // Verificar parámetros de URL para mensaje de éxito
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            const formMessage = document.getElementById("form-message");
+            if (formMessage) {
+                formMessage.classList.remove("d-none");
+                formMessage.classList.add("show");
+                
+                // Desplazar al mensaje
+                setTimeout(() => {
+                    formMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+                }, 100);
+                
+                // Limpiar parámetros de URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        }
+    }
 })();

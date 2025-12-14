@@ -339,3 +339,65 @@ a {
     background: var(--sd-surface);
     color: var(--sd-text);
 }
+
+/* Estilos para el formulario y mensajes */
+#form-message {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.sd-form .form-control:focus,
+.sd-form .form-select:focus {
+    border-color: var(--sd-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--sd-primary-rgb), 0.25);
+}
+
+/* Estilos para la página de gracias */
+.text-success {
+    color: #28a745 !important;
+}
+
+.sd-card.text-center {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Mejoras de accesibilidad */
+.form-label {
+    font-weight: 500;
+}
+
+.invalid-feedback {
+    font-size: 0.875rem;
+}
+
+.alert {
+    border-left: 4px solid;
+}
+
+.alert-info {
+    border-left-color: #17a2b8;
+    background-color: rgba(23, 162, 184, 0.1);
+}
+
+/* Transiciones suaves */
+.form-control,
+.form-select,
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sd-card.p-5 {
+        padding: 2rem !important;
+    }
+    
+    .sd-section-title {
+        font-size: 1.5rem;
+    }
+}
