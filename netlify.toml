@@ -1,6 +1,19 @@
 [build]
   publish = "."
 
+# Primero las redirecciones específicas
+[[redirects]]
+  from = "/contacto"
+  to = "/contacto.html"
+  status = 200
+
+[[redirects]]
+  from = "/gracias"
+  to = "/contacto.html"
+  status = 200
+  force = true  # Usa force para mantener los parámetros
+
+# Luego la redirección general para SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"
